@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adopt</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/adopt.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway:100,300&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ead7d7f306.js"></script>
+
+        <script type="text/javascript" src="scripts/adopt.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="header">
+            <center><a href="/index.html"><img src="assets/images/logo.png" id="logo_header"></a></center>
+        </div>
+        <div class='container-fluid'>
+            <div class="sectionz sec1">
+                <center>
+                    <div class='upperContent'>
+                        <h2 class='heading darkgreen'>How many trees do you want to plant?</h2>
+                        <br>
+                        <p class='headingSubtext'>
+                            <span class='treesInputSpan'><input type="text" name="number" id="numtrees" onkeyup="keyPressed()" value="10"></span>
+                            <br>
+                            <span class='treesFor'>trees for &#8377;<span class='totalPrice'></span></span>
+                        </p>
+
+                    </div>
+                </center>
+                
+
+                <div class="trees_display">
+                    <div class="grid" id="grid">
+                        <div></div>
+                    </div>
+
+                </div>
+                <br>
+                <center>
+                    <button class="minimalBtn darkgreen" onclick="proceedToPayment()">ADOPT
+                        <span class='totalTrees'></span>
+                        TREES NOW
+                    </button>
+                    <br>
+                    <span class='button-subtext'>You will be taken to enter your details</span>
+                </center>
+            </div>
+
+            <div class="sectionz sec2 container-fluid">
+                <div class="section-content">
+                    <br><br>
+                    <center>
+                        <h3>Adopt
+                            <span class="totalTrees"></span>
+                            trees for ₹
+                            <span class="totalPrice"></span>.</h3>
+                        <p class='subheading'>Enter your details to recieve periodical updates about the adopted trees</p>
+                        <form class='form-container' action = "server/submitForm.php" method = "POST">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        name="fname"
+                                        class="form-control"
+                                        onchange="inputValidation('fname')"
+                                        onkeyup="inputValidation('fname')"
+                                        placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        name="lname"
+                                        class="form-control"
+                                        onchange="inputValidation('lname')"
+                                        onkeyup="inputValidation('lname')"
+                                        placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class='form-row'>
+                                <div class='col'>
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        class="form-control"
+                                        onchange="inputValidation('email')"
+                                        onkeyup="inputValidation('email')"
+                                        placeholder="Email ID">
+                                </div>
+                            </div>
+
+                            <div class = "form-row" style="display: none">
+                                <div class = "col">
+                                    <input type="text" name="numtrees" id = "number_trees" value = "0">
+                                </div>
+                                <div class = "col">
+                                    <input type="text" name="totalprice" id= "totalprice" value = "0">
+                                </div>
+
+                            </div>
+                            <button id='paynowBtn' class='redButton' onclick="formValidate()">
+                                <input type="submit" name="">PAY NOW
+                            </button>
+
+                        </form>
+
+                        
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div id="footer-container" class="container-fluid">
+            <div>
+                <div id="footer-content" class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div id="footer-col1-1" class="col-md-6"><img
+                                src="https://cdn1.imggmi.com/uploads/2019/3/11/4fa2de26f916cb16ee6c36ffb0643192-full.png"
+                                alt="">
+                                <p id="footer-text">reprehenderit tempor officia lorem laborum proident id
+                                    pariatur do consequat qui id ullamco. voluptate in ipsum est veniam laborum qui
+                                    officia aliquip.</p>
+                            </div>
+                            <div id="footer-col1-2" class="col-md-6">
+                                <a href="#">300+ trees adopted</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-col2" class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6" id="footer-col2-1">
+                                <span>contact us</span>
+                                <div id="footer-col2-1-content">
+                                    <p>
+                                        <a href="#">
+                                            <i class="fas fa-question-circle"></i>frequently asked questions</a>
+                                    </p>
+                                    <div>
+                                        <i class="fas fa-envelope"></i>
+                                        <span>contact@aseedforlife.com</span></div>
+                                    <div>
+                                        <i class="fas fa-phone"></i>
+                                        <span>+91-99999999</span></div>
+                                </div>
+                            </div>
+                            <div id="footer-col2-2" class="col-md-6">
+                                <h6>follow us on</h6>
+                                <a href="#">
+                                    <span>
+                                        <i class="fab fa-facebook-square"></i></span></a>
+                                <a href="#">
+                                    <span>
+                                        <i class="fab fa-twitter-square"></i></span></a>
+                                <a href="#">
+                                    <span>
+                                        <i class="fab fa-instagram"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

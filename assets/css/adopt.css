@@ -1,0 +1,245 @@
+html, body	{
+	padding: 0;
+	margin: 0;
+
+	/*width: 100%;
+	height: 100%;*/
+}
+
+.lightgreen {
+    color: #A7CB7B;
+}
+
+.darkgreen {
+    color: #247903;
+    font-weight: 400;
+}
+
+.header	{
+	width: 100%;
+	height: 82px;
+background-color: #607D8B;
+	margin: 0;
+	position: sticky;
+    top: 0;
+    z-index: 10000;
+	/*overflow-x: hidden;*/
+}
+
+.trees_display	{
+	width: 100%;
+	background-color: white;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 130px);
+}
+
+.grid>* {
+  /*background-color: green;*/
+  background-image: url('../images/LOGO-single.png');
+  height: 130px;
+  /*background-color: black;*/
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.sec1	{
+	padding: 0;
+	margin: 0;
+	/*overflow-y:*/
+
+}
+
+h3{
+	text-transform: uppercase;
+	font-family: 'Abril Fatface';
+	letter-spacing: 2px;
+	margin-bottom: 2% !important;
+	font-size: 46px !important;
+}
+
+.sec2	{
+	display: none;
+}
+
+.heading {
+	font-family: 'Abril Fatface', cursive;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.redButton {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #702D39;
+	padding: 10px;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.3%
+}
+
+.button-subtext{
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.form-container{
+	width: 50%;
+}
+
+.form-row{
+margin-bottom: 2%;
+}
+
+.subheading{
+	font-size: 18px;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.sec2 > h3 {
+	margin-top: 2% !important;
+}
+
+.section-content{
+	/* margin-top: 10%; */
+}
+
+#paynowBtn {
+	margin-top: 2%;
+}
+
+.minimalBtn{
+    letter-spacing: 1px;
+    background: transparent;
+    padding: 12px;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+.icon{
+	filter: invert(56%) sepia(0%) saturate(416%) hue-rotate(150deg) brightness(95%) contrast(88%);
+}
+
+/* FOOTER */
+
+#footer-container{
+    margin-top: 5%;
+    background: #1D2A33;
+}
+
+#footer-content{
+    padding: 30px;
+    margin: 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#footer-text{
+    color: #E5E5E5;
+    font-size: 16px;
+}
+
+#footer-col1-1 img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#footer-col1-2 > a{
+    color: #E5E5E5;
+    display: inline-block;
+    margin-top: 70px;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid #E5E5E5; 
+    padding: 13px;
+    letter-spacing: 2px;
+}
+
+#footer-col1-2 a:hover{
+    text-decoration: none;
+}
+
+#footer-col2-1{
+    font-family: 'Open Sans';
+    color: #E5E5E5;
+    font-size: 16px;
+}
+
+#footer-col2-1-content{
+    margin: 15px 0px;
+    line-height: 30px;
+}
+
+#footer-col2-1-content div {
+    display: inline-block;
+}
+
+#footer-col2-1-content > div{
+    margin-right: 30px;
+}
+
+#footer-col2-1-content svg{
+    margin-right: 10px;
+}
+
+#footer-col2-1-content > p > a {
+    color: #E5E5E5;
+    font-weight: 700;
+}
+
+#footer-col2-1-content > p > a:hover{
+    text-decoration: none;
+}
+
+#footer-col2-2 h6{
+    font-family: 'Open Sans';
+    color: #E5E5E5;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#footer-col2-2 a span{
+    color: #E5E5E5;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#numtrees {
+    border: 1px dotted ;
+    width: 10%;
+    background:#FEFBF5;
+    text-align: center;
+}
+
+.treesInputSpan{
+    font-size: 48px;
+}
+
+.treesFor {
+    font-size: 28px;
+}
+
+.totalPrice {
+    font-size: 40px;
+}
+
+.heading {
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.headingSubtext {
+    font-weight: 100;
+}
+
+.upperContent {
+    margin-bottom: 3%;
+}

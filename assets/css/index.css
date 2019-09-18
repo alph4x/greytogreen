@@ -1,0 +1,362 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    height: 87px;
+    /*background-color: black;*/
+    width: 100%;
+
+    background-color: #607D8B;
+
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    transition: 0.5s ease;
+}
+
+.header_2 {
+    display: none;
+}
+
+.lightgreen {
+    color: #A7CB7B;
+}
+
+.darkgreen {
+    color: #247903;
+}
+
+.red {
+    color: #812D3A;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #E5E5E5 !important;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    width: 100%;
+    /*background-image: url('../images/landing.jpg');*/
+    background-color: #fff;
+    height: 500px;
+
+    margin-top: -82px;
+}
+
+#logo_header {
+    margin-left: 25px;
+}
+
+.header ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header ul li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+.header-link {
+    font-size: 18px;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+#trees-adopted-nav {
+
+    padding: 13px;
+    font-weight: 700;
+    border: 2px solid #E5E5E5;
+    transition: 0.2s ease;
+
+}
+
+.sec-content {
+    background-color: white;
+    margin: 30px;
+    padding-top: 50px;
+}
+
+.sec-heading {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    color: #702D39;
+    line-height: 60px;
+    font-size: 34px;
+    margin-bottom: 5%;
+    /* letter-spacing: 0.1em; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button {
+    background: #FEFBF5;
+    border: 1px solid #702D39;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.button span {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    color: #702D39;
+    font-weight: 900;
+    padding: 15px;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 50px;
+    background-color: black;
+
+}
+
+#makeamark {
+    margin: 30px auto;
+    display: block;
+}
+
+/*.main 	{
+	height: 100%;
+	background-color: black;
+}*/
+
+.landing_logo {
+    width: 300px;
+    height: 300px;
+    /*margin-top: 30%;*/
+    filter: invert(56%) sepia(22%) saturate(688%) hue-rotate(55deg) brightness(96%) contrast(92%);
+    /* color: red; */
+    /*filter: invert(100%);*/
+}
+
+/*.headerScrolledBgcolor {
+    background-color: #659e52;;
+}
+
+.headerUnscrolledBgcolor {
+    background-color: transparent;
+}*/
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+/*@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(550px);
+            transform: translateX(550px);
+  }
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: slide-right 0.5s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+*/
+.hamburger {
+    /*background-image: url('../images/LOGO-2.png');*/
+
+}
+
+.hamburger img {
+    height: 35px;
+    margin: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 200;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 0;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.wrapper {
+    transition: margin-left 0.5s;
+    /*padding: 20px;*/
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+
+.closebtn {
+    font-size: 40px;
+}
+
+.sec-tagline {
+    line-height: 95%;
+    font-size: 128px;
+    font-family: 'Abril Fatface' !important;
+    font-weight: 
+}
+
+.sec-subheading {
+    color: #812D3A;
+}
+
+.titlespan{
+    font-size: 42px;
+    font-weight: 100;
+}
+
+.taglinespan{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.plantnow-btn{
+    letter-spacing: 1px;
+    background: transparent;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+/* FOOTER */
+
+#footer-container{
+    margin-top: 5%;
+    background: #263238;
+}
+
+#footer-content{
+    padding: 30px;
+    margin: 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#footer-text{
+    color: #E5E5E5;
+    font-size: 16px;
+}
+
+#footer-col1-1 img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#footer-col1-2 > a{
+    color: #E5E5E5;
+    display: inline-block;
+    margin-top: 70px;
+    font-weight: 700;
+    text-align: center;
+    border: 2px solid #E5E5E5; 
+    padding: 13px;
+    letter-spacing: 2px;
+}
+
+#footer-col1-2 a:hover{
+    text-decoration: none;
+}
+
+#footer-col2-1{
+    font-family: 'Open Sans';
+    color: #E5E5E5;
+    font-size: 16px;
+}
+
+#footer-col2-1-content{
+    margin: 15px 0px;
+    line-height: 30px;
+}
+
+#footer-col2-1-content div {
+    display: inline-block;
+}
+
+#footer-col2-1-content > div{
+    margin-right: 30px;
+}
+
+#footer-col2-1-content svg{
+    margin-right: 10px;
+}
+
+#footer-col2-1-content > p > a {
+    color: #E5E5E5;
+    font-weight: 700;
+}
+
+#footer-col2-1-content > p > a:hover{
+    text-decoration: none;
+}
+
+#footer-col2-2 h6{
+    font-family: 'Open Sans';
+    color: #E5E5E5;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#footer-col2-2 a span{
+    color: #E5E5E5;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.fas {
+    margin-right: 8px;
+}
+
+.navlinksOnScroll {
+    display: none !important;
+}
