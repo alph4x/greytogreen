@@ -301,6 +301,7 @@ html {
     border: 2px solid #E5E5E5; 
     padding: 13px;
     letter-spacing: 2px;
+    text-decoration: none;
 }
 
 #footer-col1-2 a:hover{
@@ -319,7 +320,12 @@ html {
 }
 
 #footer-col2-1-content div {
-    display: inline-block;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#footer-col2-1-content div a {
+    color: inherit;
 }
 
 #footer-col2-1-content > div{
