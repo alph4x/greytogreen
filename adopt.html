@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Adopt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/adopt.css">
         <link
             href="https://fonts.googleapis.com/css?family=Raleway:100,300&display=swap"
@@ -71,11 +72,11 @@
                     <center>
                         <h3>Adopt
                             <span class="totalTrees"></span>
-                            trees for ₹
+                            trees for &#8377;
                             <span class="totalPrice"></span>.</h3>
                         <p class='subheading'>Enter your details to recieve periodical updates about the adopted trees</p>
                         <form class='form-container' action = "server/submitForm.php" method = "POST">
-                            <div class="form-row">
+                            <div class="form-row" id="resp-1">
                                 <div class="col">
                                     <input
                                         type="text"
@@ -116,9 +117,7 @@
                                 </div>
 
                             </div>
-                            <button id='paynowBtn' class='redButton' onclick="formValidate()">
-                                <input type="submit" name="">PAY NOW
-                            </button>
+                                <input id='paynowBtn' class='redButton' onclick="formValidate()" type="submit" name="" value="PAY NOW">
 
                         </form>
 

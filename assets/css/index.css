@@ -1,5 +1,5 @@
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 html,
@@ -374,4 +374,13 @@ html {
 
 .navlinksOnScroll {
     display: none !important;
+}
+
+@media (max-width:500px) {
+    .sec-tagline {
+        font-size: 100px;
+    }
+    .header {
+        height: 60px;
+    }
 }

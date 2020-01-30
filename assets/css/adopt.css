@@ -243,3 +243,19 @@ margin-bottom: 2%;
 .upperContent {
     margin-bottom: 3%;
 }
+
+@media (max-width:377px) {
+
+    #numtrees {
+        width: 30%;
+    }
+    
+    #treesInputSpan {
+        margin-top: -50px;
+    }
+
+    #resp-1 {
+        display: block;
+    }
+
+}

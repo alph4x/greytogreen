@@ -98,8 +98,14 @@ var currentTrees = 10;
             function proceedToPayment() {
                 $(".sec2").css("display", "block");
                 var $target = $('html,body');
+                if (screen.width < 377) {
+                    var st = 750;
+                }
+                else if (screen.width > 377) {
+                    var st = $target.height();
+                }
                 $target.animate({
-                    scrollTop: $target.height()
+                    scrollTop: st
                 }, 1000);
             }
 
